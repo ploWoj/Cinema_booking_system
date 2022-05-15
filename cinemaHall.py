@@ -6,6 +6,7 @@ from numpy import dstack
 from scipy.fftpack import ss_diff
 from yaml import safe_dump_all
 
+from seat import Seat
 
 class CinemaHall:
 
@@ -15,6 +16,11 @@ class CinemaHall:
         self.numberOfReservedSeats = numberOfReservedSeats
         self.hallNumber = hallNumber
         self.filmName = filmName
+
+    def reservedPlaces(self):
+        for i in range(i, self.numberOfSeat):
+            self.places.append(Seat('','',i,False))
+    
     
     def setHallNumber(self, number):
         self.hallNumber = number
@@ -29,7 +35,14 @@ class CinemaHall:
         return self.numberOfReservedSeats
 
     def addReservation(self):
-        SO_BROADCAST
+        if self.numberOfReservedSeats < self.numberOfSeat:
+            selectedSeat = self.selectSeat()
+            if selectedSeat and not self.places[self.selectSeat-1].isReserved():
+                self.places[selectedSeat - 1].reserved()
+                self.numberOfReservedSeats += 1
+            else:
+                print("This seat is already selected")
+
 
     def defleteReservation(self):
         dstack

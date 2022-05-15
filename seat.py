@@ -1,16 +1,19 @@
 import os
+man_file_path = os.getcwd() + '/names/manName.txt'
+woman_file_path = os.getcwd() + '/names/womanName.txt'
 
 class Seat:
 
     PolishMenPopularName = []
     PolishWomenPopularName = []
 
-    def __init__(self, name, surname, seatID, reserved, lista):
+    def __init__(self, name, surname, seatID, reserved):
         self.name = name
         self.surname = surname
         self.seatID = seatID
         self.reserved = reserved
-        self.PolishMenPopularName = lista
+        self.PolishMenPopularName = self.loadMenNameFromFile(man_file_path)
+        self.PolishWomenPopularName = self.loadMenNameFromFile(woman_file_path)
     
     def isReserved(self):
         return self.reserved
@@ -45,19 +48,22 @@ class Seat:
     
 
 #  napisz funkcje ktora zszczytuje z pluku imiona i inicjalizuje zmienna imiona meskie
-    @classmethod
-    def loadMenNameFromFile(cls, path):
+    
+    def loadMenNameFromFile(self, path):
         
         lista = []
         with open(path, 'r') as f:
             for line in f:
-                line = line.replace('\n','')
+                first = line.find(' ')
+                line = line[first+ 1:]
+                second = line.find(' ')
+                line = line[:second]
                 lista.append(line)
         return lista
         
 
 
-seat = Seat('Wojciech', 'Plociennik', 32, True, [])
+seat = Seat('Wojciech', 'Plociennik', 32, True)
 
 
 lista = Seat.PolishMenPopularName
