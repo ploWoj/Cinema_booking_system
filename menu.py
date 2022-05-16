@@ -1,6 +1,4 @@
-from multiprocessing.sharedctypes import Value
 from os import system
-from cinemaHall import CinemaHall
 from cinema import Cinema
 
 class Menu:
