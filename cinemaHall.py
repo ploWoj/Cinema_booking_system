@@ -29,6 +29,14 @@ class CinemaHall:
     def displayAllPlaces(self):
         for i in self.listOfPlaces:
             print(i)
+    
+    def displayFreeAndReservedSeat(self):
+        numberOfFreeSeats = maximumSeats - self.reservedSeat
+
+        print("Number of free seats {}".format(numberOfFreeSeats))
+        print("Number of reserved seats {}".format(self.reservedSeat))
+
+
     @classmethod
     def displayAvailableSeats(cls):
         for i in cls.listOfPlaces:
@@ -41,7 +49,6 @@ class CinemaHall:
             if i.isReserved():
                 print(i)
         
-
     def selectSeat(self):
         
         selected =  int(input("Select number of seat ")) - 1
@@ -97,37 +104,4 @@ class CinemaHall:
         for i in range(1, maximiumSeats + 1):
             listOfPlaces.append(Seat('','',i,False))
         return listOfPlaces
-
-
-
-   
-    # def selectSeat(self):
-    #     SO_BROADCAST
-    
-    # def checkSeat(self):
-    #     safe_dump_all
-    
-    # def displayAllSeats(self):
-    #     S
-    
-    # def displayAllAvailabeSeats(self):
-    #     ss_diff
-    
-    # def displayReservedSeats(self):
-    #     S
-    
-    # def displayAmountOfFreeAndReservedSeats(self):
-    #     ss_diff
-    
-
-kino1 = CinemaHall()
-
-# line = kino1.selectSeat()
-
-kino1.addReservation()
-
-kino1.displayAllPlaces()
-
-kino1.cancelReservation()
-
 
