@@ -15,16 +15,16 @@ class CinemaHall:
 
     hallNumber = 0
     reservedSeat = 0
-    nameOfFilm = ''
+    filmName = ''
     listOfPlaces = []
 
-    def __init__(self):
+    def __init__(self, filmName):
         
         CinemaHall.listOfPlaces = CinemaHall.setPlaces(maximumSeats)
         CinemaHall.hallNumber += 1
         CinemaHall.reservedSeat = 0
-        
-
+        self.filmName = filmName
+    
     
     def displayAllPlaces(self):
         for i in self.listOfPlaces:
@@ -104,4 +104,5 @@ class CinemaHall:
         for i in range(1, maximiumSeats + 1):
             listOfPlaces.append(Seat('','',i,False))
         return listOfPlaces
+
 
