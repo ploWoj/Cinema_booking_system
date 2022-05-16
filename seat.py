@@ -12,8 +12,8 @@ class Seat:
         self.surname = surname
         self.seatID = seatID
         self.reserved = reserved
-        self.PolishMenPopularName = self.loadMenNameFromFile(man_file_path)
-        self.PolishWomenPopularName = self.loadMenNameFromFile(woman_file_path)
+        self.PolishMenPopularName = Seat.loadMenNameFromFile(man_file_path)
+        self.PolishWomenPopularName = Seat.loadMenNameFromFile(woman_file_path)
     
     def isReserved(self):
         return self.reserved
@@ -23,11 +23,13 @@ class Seat:
             print("The place is already booked\n")
         else:
             name = input("Please give me your name: ")
-            # if not name.isalpha:
-            #     raise ValueError("Given name has to include only letters")
+            if name.upper() in self.PolishMenPopularName or name.upper() in self.PolishWomenPopularName:
+                self.name = name
+            else: 
+                print("This is not Polish name.")
 
-            self.surname = input("Please give me your name: ")
-            self.seatID = input("Please give a seat number")
+            self.surname = input("Please give me your surname: ")
+            self.seatID = input("Please give a seat number: ")
             self.isReserved = True
             print("Seat number {} has been reserved by {} {}".format(self.seatID, self.name, self.surname ))
     
@@ -48,8 +50,8 @@ class Seat:
     
 
 #  napisz funkcje ktora zszczytuje z pluku imiona i inicjalizuje zmienna imiona meskie
-    
-    def loadMenNameFromFile(self, path):
+    @staticmethod
+    def loadMenNameFromFile(path):
         
         lista = []
         with open(path, 'r') as f:
@@ -63,9 +65,10 @@ class Seat:
         
 
 
-seat = Seat('Wojciech', 'Plociennik', 32, True)
+seat = Seat('Wojciech', 'Plociennik', 34, True)
+print(seat.PolishMenPopularName)
+freeSeat = Seat(' ',' ', -5, False)
+freeSeat.reserve()
 
 
-lista = Seat.PolishMenPopularName
 
-print(lista)

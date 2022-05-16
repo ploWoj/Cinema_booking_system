@@ -1,13 +1,13 @@
 class Cinema:
 
-    def __init__(self, halls, amountOfHalls, films):
-        self.halls = halls
+    def __init__(self, listOfHalls, amountOfHalls, listOfFilms):
+        self.listOfHalls = listOfHalls
         self.amountOfHalls = amountOfHalls
-        self.films = films
+        self.listOfFilms = listOfFilms
 
     
     def displayAllFilms(self):
-        for film in self.films:
+        for film in self.listOfFilms:
             print(film)
     
     def getFilm(self, number):
