@@ -8,23 +8,46 @@ from yaml import safe_dump_all
 
 from seat import Seat
 
+maximumSeats = 50
+
+
 class CinemaHall:
 
-    def __init__(self, numberOfSeats, places, numberOfReservedSeats, hallNumber, filmName):
-        self.numberOfSeat = numberOfSeats
-        self.places = places
-        self.numberOfReservedSeats = numberOfReservedSeats
-        self.hallNumber = hallNumber
-        self.filmName = filmName
+    hallNumber = 0
+    numberOfReservedSeats = []
+    nameOfFilm = ''
+    listOfPlaces = []
 
-    def reservedPlaces(self):
-        for i in range(i, self.numberOfSeat):
-            self.places.append(Seat('','',i,False))
+    def __init__(self):
+        
+        CinemaHall.listOfPlaces = CinemaHall.setPlaces(maximumSeats)
+        CinemaHall.hallNumber += 1
+        
+
     
+    def displayAllPlaces(self):
+        for i in self.listOfPlaces:
+            print(i)
+
+    def displayAvailableSeats(cls):
+        for i in cls.listOfPlaces:
+            if not i.isReserved():
+                print(i)
     
-    def setHallNumber(self, number):
-        self.hallNumber = number
+    def addReservation(self):
+        if self.numberOfReservedSeats < self.numberOfSeat:
+            selectedSeat = self.selectSeat()
+            if selectedSeat and not self.places[self.selectSeat-1].isReserved():
+                self.places[selectedSeat - 1].reserved()
+                self.numberOfReservedSeats += 1
+            else:
+                print("This seat is already selected")
     
+
+
+
+
+
     def setFilmName(self, film):
         self.filmName = film
 
@@ -34,34 +57,38 @@ class CinemaHall:
     def getNumberOfReservedSeats(self):
         return self.numberOfReservedSeats
 
-    def addReservation(self):
-        if self.numberOfReservedSeats < self.numberOfSeat:
-            selectedSeat = self.selectSeat()
-            if selectedSeat and not self.places[self.selectSeat-1].isReserved():
-                self.places[selectedSeat - 1].reserved()
-                self.numberOfReservedSeats += 1
-            else:
-                print("This seat is already selected")
+    @staticmethod
+    def setPlaces(maximiumSeats):
+        listOfPlaces = []
+        for i in range(1, maximiumSeats + 1):
+            listOfPlaces.append(Seat('','',i,False))
+        return listOfPlaces
 
 
-    def defleteReservation(self):
-        dstack
+
+    # def defleteReservation(self):
+    #     dstack
     
-    def selectSeat(self):
-        SO_BROADCAST
+    # def selectSeat(self):
+    #     SO_BROADCAST
     
-    def checkSeat(self):
-        safe_dump_all
+    # def checkSeat(self):
+    #     safe_dump_all
     
-    def displayAllSeats(self):
-        S
+    # def displayAllSeats(self):
+    #     S
     
-    def displayAllAvailabeSeats(self):
-        ss_diff
+    # def displayAllAvailabeSeats(self):
+    #     ss_diff
     
-    def displayReservedSeats(self):
-        S
+    # def displayReservedSeats(self):
+    #     S
     
-    def displayAmountOfFreeAndReservedSeats(self):
-        ss_diff
+    # def displayAmountOfFreeAndReservedSeats(self):
+    #     ss_diff
     
+
+kino1 = CinemaHall()
+
+kino1.displayAllPlaces()
+kino1.displayAvailableSeats()

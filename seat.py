@@ -15,6 +15,10 @@ class Seat:
         self.PolishMenPopularName = Seat.loadMenNameFromFile(man_file_path)
         self.PolishWomenPopularName = Seat.loadMenNameFromFile(woman_file_path)
     
+
+    def __str__(self):
+        return "{} {} {} {}".format(self.name, self.surname, self.seatID, self.reserved)
+        
     def isReserved(self):
         return self.reserved
 
@@ -49,7 +53,7 @@ class Seat:
             print("Seat number {} has been free.".format(self.seatID))
     
 
-#  napisz funkcje ktora zszczytuje z pluku imiona i inicjalizuje zmienna imiona meskie
+
     @staticmethod
     def loadMenNameFromFile(path):
         
@@ -65,10 +69,10 @@ class Seat:
         
 
 
-seat = Seat('Wojciech', 'Plociennik', 34, True)
-print(seat.PolishMenPopularName)
-freeSeat = Seat(' ',' ', -5, False)
-freeSeat.reserve()
+
+
+
+
 
 
 
