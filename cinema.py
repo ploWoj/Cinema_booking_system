@@ -17,8 +17,11 @@ class Cinema:
 
     
     def displayAllFilms(self):
+        print(">>>>> Playing movies in our theater <<<<<\n")
+        counter = 0
         for halls in self.listOfHalls:
-            print(halls.GetFilmName())
+            counter += 1
+            print(counter, halls.GetFilmName())
     
     
     
@@ -35,9 +38,4 @@ class Cinema:
         for halls in self.listOfHalls:
             halls.setFilmName(self.listOfFilms[counter])
             counter +=1
-            # print(halls.GetFilmName())
-           
-
-cinema = Cinema()
-# cinema.setFilmToHall()
-cinema.displayAllFilms()
+            

@@ -1,10 +1,5 @@
 
-from re import S
-from socket import SO_BROADCAST
-
-from numpy import dstack
-from scipy.fftpack import ss_diff
-from yaml import safe_dump_all
+import sys
 
 from seat import Seat
 
@@ -32,19 +27,22 @@ class CinemaHall:
     
     def displayFreeAndReservedSeat(self):
         numberOfFreeSeats = maximumSeats - self.reservedSeat
-
+        print('\n')
         print("Number of free seats {}".format(numberOfFreeSeats))
         print("Number of reserved seats {}".format(self.reservedSeat))
 
 
     @classmethod
     def displayAvailableSeats(cls):
+        print('\n')
         for i in cls.listOfPlaces:
             if not i.isReserved():
                 print(i)
+        print('\n')
 
     @classmethod
     def displayReservedSeats(cls):
+        print('\n')
         for i in cls.listOfPlaces:
             if i.isReserved():
                 print(i)
@@ -66,6 +64,7 @@ class CinemaHall:
             print("Reserved")
         else:
             print("Not reserved")
+            
 
     def addReservation(self):
         self.displayAvailableSeats()

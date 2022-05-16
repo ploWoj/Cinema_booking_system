@@ -26,15 +26,15 @@ class Seat:
         if self.isReserved():
             print("The place is already booked\n")
         else:
-            name = input("Please give me your name: ")
+            name = input("\nPlease give me your name: ")
             if name.upper() in self.PolishMenPopularName or name.upper() in self.PolishWomenPopularName:
                 self.name = name
             else: 
-                print("This is not Polish name.")
+                print("\nThis is not Polish name.")
 
-            self.surname = input("Please give me your surname: ")
+            self.surname = input("\nPlease give me your surname: ")
             self.reserved = True
-            print("Seat number {} has been reserved by {} {}".format(self.seatID , self.name, self.surname ))
+            print("\nSeat number {} has been reserved by {} {}".format(self.seatID , self.name, self.surname ))
     
     def cancelReservation(self):
         if not self.isReserved():
