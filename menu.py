@@ -5,17 +5,17 @@ from cinema import Cinema
 
 class Menu:
 
+    menuOption = ['Add reservation', 'Cancel reservation', 'Check the seat',
+                 'Display all seats', 'Display available seats', 'Display reserved seats',
+                 'Write to File', 'Load from File', 'EXIT']
     def __init__(self):
         self.cinema = Cinema()
     
     def printMenu(self):
-        print("1. Add reservation.")
-        print("2. Delete reservation.")
-        print("3. Check the place.")
-        print("4. Display all seats.")
-        print("5. Display available seats.")
-        print("6. Display reserved seats.")
-        print("Exit - press 0")
+        
+        for i in range (0, len(self.menuOption)):
+            print("{}. {}.".format(i + 1, self.menuOption[i]))
+        
         
     def selectMovie(self):
         system("clear")
@@ -55,6 +55,10 @@ class Menu:
                 elif choice == 6:
                     selectedHall = self.selectMovie()
                     selectedHall.displayReservedSeats()
+                elif choice == 7:
+                    print('s')
+                elif choice == 8:
+                    print('g')
                 else:
                     exit()
             except ValueError as e:
