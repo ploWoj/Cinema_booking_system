@@ -12,8 +12,12 @@ class Seat:
         self.surname = surname
         self.seatID = seatID
         self.reserved = reserved
-        self.PolishMenPopularName = Seat.loadMenNameFromFile(man_file_path)
-        self.PolishWomenPopularName = Seat.loadMenNameFromFile(woman_file_path)
+        try:
+            self.PolishMenPopularName = Seat.loadMenNameFromFile(man_file_path)
+            self.PolishWomenPopularName = Seat.loadMenNameFromFile(woman_file_path)
+        except FileExistsError as e:
+            print("You enter wrong file path",e)
+            
     
 
     def __str__(self):
@@ -26,15 +30,27 @@ class Seat:
         if self.isReserved():
             print("The place is already booked\n")
         else:
-            name = input("\nPlease give me your name: ")
-            if name.upper() in self.PolishMenPopularName or name.upper() in self.PolishWomenPopularName:
-                self.name = name
-            else: 
-                print("\nThis is not Polish name.")
+            try:
+                name = self.validationName()
+                if name.upper() in self.PolishMenPopularName or name.upper() in self.PolishWomenPopularName:
+                    self.name = name
+                else: 
+                    raise UnboundLocalError("That kind of name does not exist!")
 
-            self.surname = input("\nPlease give me your surname: ")
-            self.reserved = True
-            print("\nSeat number {} has been reserved by {} {}".format(self.seatID , self.name, self.surname ))
+                self.surname = self.validationName()
+                self.reserved = True
+                print("\nSeat number {} has been reserved by {} {}".format(self.seatID , self.name, self.surname ))
+                
+            except ValueError as e:
+                print("Entered word was incorect!", e)
+            except UnboundLocalError as e:
+                print("Enterd name is not polish",e)
+
+    def validationName(self):
+        name = input("Enter a name")
+        if not name.isalpha():
+            raise ValueError("Word should consits only letters!")
+        return name
     
     def cancelReservation(self):
         if not self.isReserved():
@@ -45,20 +61,19 @@ class Seat:
             self.reserved = False
             print("Seat number {} has become free".format(self.seatID))
 
-    
-
-
     @staticmethod
     def loadMenNameFromFile(path):
-        
-        lista = []
-        with open(path, 'r') as f:
-            for line in f:
-                first = line.find(' ')
-                line = line[first+ 1:]
-                second = line.find(' ')
-                line = line[:second]
-                lista.append(line)
+        if os.path.exists(path):
+            lista = []
+            with open(path, 'r') as f:
+                for line in f:
+                    first = line.find(' ')
+                    line = line[first+ 1:]
+                    second = line.find(' ')
+                    line = line[:second]
+                    lista.append(line)
+        else:
+            raise FileExistsError("File does not exists")
         return lista
         
 
