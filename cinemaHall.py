@@ -14,7 +14,7 @@ maximumSeats = 50
 class CinemaHall:
 
     hallNumber = 0
-    listOfReservedSeats = []
+    reservedSeat = 0
     nameOfFilm = ''
     listOfPlaces = []
 
@@ -22,6 +22,7 @@ class CinemaHall:
         
         CinemaHall.listOfPlaces = CinemaHall.setPlaces(maximumSeats)
         CinemaHall.hallNumber += 1
+        CinemaHall.reservedSeat = 0
         
 
     
@@ -39,28 +40,12 @@ class CinemaHall:
         for i in cls.listOfPlaces:
             if i.isReserved():
                 print(i)
-    
-    def addReservation(self):
         
-        chosenSeat = input("Enter a seat you want to choose.")
-        
-        while chosenSeat > len(self.listOfPlaces) and chosenSeat < 1:
-            print("Try to choose a seat from 1 to {}".foramt(maximumSeats))
-
-        
-        if self.numberOfReservedSeats < self.numberOfSeat:
-            selectedSeat = self.selectSeat()
-            if selectedSeat and not self.places[self.selectSeat-1].isReserved():
-                self.places[selectedSeat - 1].reserved()
-                self.numberOfReservedSeats += 1
-            else:
-                print("This seat is already selected")
-    
 
     def selectSeat(self):
         
-        selected =  int(input("Select number of seat "))
-        while (selected < 1 or selected > len(self.listOfPlaces)):
+        selected =  int(input("Select number of seat ")) - 1
+        while (selected < 0  or selected > len(self.listOfPlaces)):
             print('Try to choose a seat from 1 to {}'.format(len(self.listOfPlaces)))
             selected =  int(input("Select number of seat "))
     
@@ -75,15 +60,26 @@ class CinemaHall:
         else:
             print("Not reserved")
 
+    def addReservation(self):
+        self.displayAvailableSeats()
+        if self.reservedSeat < maximumSeats:
+            selectedSeat = self.listOfPlaces[self.selectSeat()]
 
+            if not selectedSeat.isReserved():
+                selectedSeat.reserve()
+                self.reservedSeat += 1
+            else:
+                print("This seat is already selected")
+        else:
+            print("There is no more place.")
 
-#     void CinemaHall::checkSeat() {
-#     std::cout << "Check the reservation: \n";
-#     size_t selectedSeat = selectSeat();
-#     if (selectedSeat) {
-#         places_[selectedSeat - 1].display();
-#     }
-# }
+    def cancelReservation(self):
+        self.displayReservedSeats()
+        selectedSeat = self.listOfPlaces[self.selectSeat()]
+        if selectedSeat.isReserved():
+            selectedSeat.cancelReservation()
+        else:
+            print("This places cannot be canceld becouse is not reserved")
 
 
     def setFilmName(self, film):
@@ -93,7 +89,7 @@ class CinemaHall:
         return self.filmName
 
     def getNumberOfReservedSeats(self):
-        return self.numberOfReservedSeats
+        return self.reservedSeat
 
     @staticmethod
     def setPlaces(maximiumSeats):
@@ -104,9 +100,7 @@ class CinemaHall:
 
 
 
-    # def defleteReservation(self):
-    #     dstack
-    
+   
     # def selectSeat(self):
     #     SO_BROADCAST
     
@@ -130,5 +124,10 @@ kino1 = CinemaHall()
 
 # line = kino1.selectSeat()
 
-kino1.checkSeat()
+kino1.addReservation()
+
+kino1.displayAllPlaces()
+
+kino1.cancelReservation()
+
 

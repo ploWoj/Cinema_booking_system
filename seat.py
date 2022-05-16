@@ -17,7 +17,7 @@ class Seat:
     
 
     def __str__(self):
-        return "{} {} {} {}".format(self.name, self.surname, self.seatID, self.reserved)
+        return "Seat number: {} is reserved: {} by {} {}".format(self.seatID, self.reserved, self.name, self.surname)
         
     def isReserved(self):
         return self.reserved
@@ -33,9 +33,8 @@ class Seat:
                 print("This is not Polish name.")
 
             self.surname = input("Please give me your surname: ")
-            self.seatID = input("Please give a seat number: ")
-            self.isReserved = True
-            print("Seat number {} has been reserved by {} {}".format(self.seatID, self.name, self.surname ))
+            self.reserved = True
+            print("Seat number {} has been reserved by {} {}".format(self.seatID , self.name, self.surname ))
     
     def cancelReservation(self):
         if not self.isReserved():
@@ -46,11 +45,6 @@ class Seat:
             self.reserved = False
             print("Seat number {} has become free".format(self.seatID))
 
-    def display(self):
-        if self.reserved:
-            print("Seat number {} is reserved by {} {}".format(self.seatID, self.name, self.surname))
-        else:
-            print("Seat number {} has been free.".format(self.seatID))
     
 
 
