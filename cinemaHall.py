@@ -14,7 +14,7 @@ maximumSeats = 50
 class CinemaHall:
 
     hallNumber = 0
-    numberOfReservedSeats = []
+    listOfReservedSeats = []
     nameOfFilm = ''
     listOfPlaces = []
 
@@ -28,13 +28,26 @@ class CinemaHall:
     def displayAllPlaces(self):
         for i in self.listOfPlaces:
             print(i)
-
+    @classmethod
     def displayAvailableSeats(cls):
         for i in cls.listOfPlaces:
             if not i.isReserved():
                 print(i)
+
+    @classmethod
+    def displayReservedSeats(cls):
+        for i in cls.listOfPlaces:
+            if i.isReserved():
+                print(i)
     
     def addReservation(self):
+        
+        chosenSeat = input("Enter a seat you want to choose.")
+        
+        while chosenSeat > len(self.listOfPlaces) and chosenSeat < 1:
+            print("Try to choose a seat from 1 to {}".foramt(maximumSeats))
+
+        
         if self.numberOfReservedSeats < self.numberOfSeat:
             selectedSeat = self.selectSeat()
             if selectedSeat and not self.places[self.selectSeat-1].isReserved():
@@ -44,8 +57,33 @@ class CinemaHall:
                 print("This seat is already selected")
     
 
+    def selectSeat(self):
+        
+        selected =  int(input("Select number of seat "))
+        while (selected < 1 or selected > len(self.listOfPlaces)):
+            print('Try to choose a seat from 1 to {}'.format(len(self.listOfPlaces)))
+            selected =  int(input("Select number of seat "))
+    
+        return selected
+
+    def checkSeat(self):
+        print("Check if seat is reserved.")
+        numberOfSeat = self.selectSeat()
+        selectedSeat = self.listOfPlaces[numberOfSeat]
+        if selectedSeat.isReserved():
+            print("Reserved")
+        else:
+            print("Not reserved")
 
 
+
+#     void CinemaHall::checkSeat() {
+#     std::cout << "Check the reservation: \n";
+#     size_t selectedSeat = selectSeat();
+#     if (selectedSeat) {
+#         places_[selectedSeat - 1].display();
+#     }
+# }
 
 
     def setFilmName(self, film):
@@ -90,5 +128,7 @@ class CinemaHall:
 
 kino1 = CinemaHall()
 
-kino1.displayAllPlaces()
-kino1.displayAvailableSeats()
+# line = kino1.selectSeat()
+
+kino1.checkSeat()
+
