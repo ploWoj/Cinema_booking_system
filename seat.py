@@ -17,8 +17,7 @@ class Seat:
             self.PolishWomenPopularName = Seat.loadMenNameFromFile(woman_file_path)
         except FileExistsError as e:
             print("You enter wrong file path",e)
-            
-    
+            exit()
 
     def __str__(self):
         return "Seat number: {} is reserved: {} by {} {}".format(self.seatID, self.reserved, self.name, self.surname)
@@ -35,7 +34,7 @@ class Seat:
                 if name.upper() in self.PolishMenPopularName or name.upper() in self.PolishWomenPopularName:
                     self.name = name
                 else: 
-                    raise UnboundLocalError("That kind of name does not exist!")
+                    raise UnboundLocalError("That kind of name does not exist!\n")
 
                 self.surname = self.validationName()
                 self.reserved = True
@@ -49,7 +48,7 @@ class Seat:
     def validationName(self):
         name = input("Enter a name")
         if not name.isalpha():
-            raise ValueError("Word should consits only letters!")
+            raise ValueError("Word should consits only letters!\n")
         return name
     
     def cancelReservation(self):
