@@ -1,3 +1,4 @@
+import os
 import time
 from seat import Seat
 import logging
@@ -9,11 +10,11 @@ class CinemaHall:
     hallNumber = 0
     reservedSeat = 0
     filmName = ''
-    listOfPlaces = []
+    
 
-    def __init__(self, filmName):
+    def __init__(self, filmName, listOfPlaces ):
         
-        CinemaHall.listOfPlaces = CinemaHall.setPlaces(maximumSeats)
+        self.listOfPlaces = self.setPlaces(maximumSeats)
         CinemaHall.hallNumber += 1
         CinemaHall.reservedSeat = 0
         self.filmName = filmName
@@ -33,18 +34,16 @@ class CinemaHall:
         time.sleep(5)
 
 
-    @classmethod
-    def displayAvailableSeats(cls):
+    def displayAvailableSeats(self):
         print('\n')
-        for i in cls.listOfPlaces:
+        for i in self.listOfPlaces:
             if not i.isReserved():
                 print(i)
         print('\n')
 
-    @classmethod
-    def displayReservedSeats(cls):
+    def displayReservedSeats(self):
         print('\n')
-        for i in cls.listOfPlaces:
+        for i in self.listOfPlaces:
             if i.isReserved():
                 print(i)
         
@@ -103,16 +102,22 @@ class CinemaHall:
     def getNumberOfReservedSeats(self):
         return self.reservedSeat
 
-    @staticmethod
-    def setPlaces(maximiumSeats):
+    
+    def setPlaces(self, maximiumSeats):
         listOfPlaces = []
         for i in range(1, maximiumSeats + 1):
             listOfPlaces.append(Seat('','',i,False))
         return listOfPlaces
 
 
-    def writeToFile(self, path):
-        with open(path, 'w') as f:
+    def writeToFile(self, path,number):
+        with open(path, 'a+') as f:
+            f.write("Cinema hall nr: {} \n".format(str(number)))
             for line in self.listOfPlaces:
-                f.write(line)
+                if len(self.listOfPlaces) == 0:
+                    logging.info("Luck of reservations in hall numebr {}".format(line))
+                    continue
+                
+                f.write(str(line))
+                f.write('\n')
         

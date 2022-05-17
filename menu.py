@@ -54,7 +54,7 @@ class Menu:
                     selectedHall = self.selectMovie()
                     selectedHall.displayReservedSeats()
                 elif choice == 7:
-                    print('s')
+                    self.cinema.writeToFile()
                 elif choice == 8:
                     print('g')
                 else:

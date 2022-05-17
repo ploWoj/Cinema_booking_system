@@ -14,7 +14,7 @@ class Cinema:
     maximumAmountOfHalls = 5
 
     def __init__(self):
-        Cinema.listOfHalls = Cinema.creatListOfHalls()
+        Cinema.listOfHalls = self.creatListOfHalls()
         self.setFilmToHall()
         os.system("clear")
 
@@ -30,11 +30,11 @@ class Cinema:
     
     
     
-    @staticmethod
-    def creatListOfHalls():
+    
+    def creatListOfHalls(self):
         lista = []
         for i in range(0, Cinema.maximumAmountOfHalls):
-            lista.append(CinemaHall(''))
+            lista.append(CinemaHall('',[]))
        
         return lista
     
@@ -43,4 +43,26 @@ class Cinema:
         for halls in self.listOfHalls:
             halls.setFilmName(self.listOfFilms[counter])
             counter +=1
+
+    def writeToFile(self):
+
+        path = os.getcwd()
+        dirname = '/reservations/'
+        path_dir = path + dirname
+
+        if not os.path.exists(path_dir):
+            os.mkdir(path_dir)
+            logging.info("Creating directory to save file")
+        
+        filename = 'reservations.txt'
+        path_file = os.path.join(path_dir, filename)
+        counter = 0
+        if os.path.exists(path_file):
+            os.remove(path_file)
+        
+        for hall in self.listOfHalls:
+            counter +=1
+            hall.writeToFile(path_file,counter)
+        
+
             

@@ -25,7 +25,7 @@ class Seat:
             logging.exception("Enter wrong path")
             exit()
         
-        # logging.info("Creat object seat")
+        logging.info("Creat object seat")
 
     def __str__(self):
         return "Seat number: {} is reserved: {} by {} {}".format(self.seatID, self.reserved, self.name, self.surname)
@@ -36,7 +36,7 @@ class Seat:
     def reserve(self):
         if self.isReserved():
             print("The place is already booked\n")
-            time.sleep(5)
+            time.sleep(2)
         else:
             try:
                 name = self.validationName()
@@ -48,7 +48,7 @@ class Seat:
                 self.surname = self.validationName()
                 self.reserved = True
                 print("\nSeat number {} has been reserved by {} {}".format(self.seatID , self.name, self.surname ))
-                time.sleep(10)
+                time.sleep(2)
             except ValueError as e:
                 print("Entered word was incorect!", e)
                 logging.exception("Entered word was incorect")
@@ -65,13 +65,13 @@ class Seat:
     def cancelReservation(self):
         if not self.isReserved():
             print("Seat is free!!!!")
-            time.sleep(5)
+            time.sleep(2)
         else:
             self.name = ''
             self.surname = ''
             self.reserved = False
             print("Seat number {} has become free".format(self.seatID))
-            time.sleep(5)
+            time.sleep(2)
 
     @staticmethod
     def loadMenNameFromFile(path):
