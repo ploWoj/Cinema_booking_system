@@ -1,4 +1,8 @@
 import os
+import logging
+
+
+
 man_file_path = os.getcwd() + '/names/manName.txt'
 woman_file_path = os.getcwd() + '/names/womanName.txt'
 
@@ -17,6 +21,7 @@ class Seat:
             self.PolishWomenPopularName = Seat.loadMenNameFromFile(woman_file_path)
         except FileExistsError as e:
             print("You enter wrong file path",e)
+            logging.exception("Enter wrong path")
             exit()
 
     def __str__(self):
@@ -42,8 +47,10 @@ class Seat:
                 
             except ValueError as e:
                 print("Entered word was incorect!", e)
+                logging.error("Entered word was incorect")
             except UnboundLocalError as e:
                 print("Enterd name is not polish",e)
+                logging.error("Entered name is not correct")
 
     def validationName(self):
         name = input("Enter a name")

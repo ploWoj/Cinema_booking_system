@@ -1,8 +1,5 @@
-
-import sys
-
 from seat import Seat
-
+import logging
 maximumSeats = 50
 
 
@@ -19,6 +16,8 @@ class CinemaHall:
         CinemaHall.hallNumber += 1
         CinemaHall.reservedSeat = 0
         self.filmName = filmName
+
+        logging.info("Creating object CinemaHall")
     
     
     def displayAllPlaces(self):

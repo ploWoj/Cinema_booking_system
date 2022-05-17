@@ -1,4 +1,5 @@
 from cinemaHall import CinemaHall
+import logging
 
 class Cinema:
 
