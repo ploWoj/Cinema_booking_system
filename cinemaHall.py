@@ -1,3 +1,4 @@
+import time
 from seat import Seat
 import logging
 maximumSeats = 50
@@ -29,6 +30,7 @@ class CinemaHall:
         print('\n')
         print("Number of free seats {}".format(numberOfFreeSeats))
         print("Number of reserved seats {}".format(self.reservedSeat))
+        time.sleep(5)
 
 
     @classmethod
@@ -61,8 +63,10 @@ class CinemaHall:
         selectedSeat = self.listOfPlaces[numberOfSeat]
         if selectedSeat.isReserved():
             print("Reserved")
+            time.sleep(5)
         else:
             print("Not reserved")
+            time.sleep(5)
             
 
     def addReservation(self):
@@ -75,8 +79,10 @@ class CinemaHall:
                 self.reservedSeat += 1
             else:
                 print("This seat is already selected")
+                time.sleep(5)
         else:
             print("There is no more place.")
+            time.sleep(5)
 
     def cancelReservation(self):
         self.displayReservedSeats()
@@ -84,7 +90,8 @@ class CinemaHall:
         if selectedSeat.isReserved():
             selectedSeat.cancelReservation()
         else:
-            print("This places cannot be canceld becouse is not reserved")
+            print("This places cannot be cancel becouse is not reserved")
+            time.sleep(5)
 
 
     def setFilmName(self, film):
@@ -104,3 +111,8 @@ class CinemaHall:
         return listOfPlaces
 
 
+    def writeToFile(self, path):
+        with open(path, 'w') as f:
+            for line in self.listOfPlaces:
+                f.write(line)
+        

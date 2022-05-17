@@ -1,5 +1,6 @@
 from cinemaHall import CinemaHall
 import logging
+import os
 
 class Cinema:
 
@@ -15,6 +16,9 @@ class Cinema:
     def __init__(self):
         Cinema.listOfHalls = Cinema.creatListOfHalls()
         self.setFilmToHall()
+        os.system("clear")
+
+        logging.info("Creat object cinema")
 
     
     def displayAllFilms(self):
@@ -28,11 +32,11 @@ class Cinema:
     
     @staticmethod
     def creatListOfHalls():
-        list = []
+        lista = []
         for i in range(0, Cinema.maximumAmountOfHalls):
-            list.append(CinemaHall(''))
+            lista.append(CinemaHall(''))
        
-        return list
+        return lista
     
     def setFilmToHall(self):
         counter = 0

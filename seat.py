@@ -1,3 +1,4 @@
+import time
 import os
 import logging
 
@@ -23,6 +24,8 @@ class Seat:
             print("You enter wrong file path",e)
             logging.exception("Enter wrong path")
             exit()
+        
+        # logging.info("Creat object seat")
 
     def __str__(self):
         return "Seat number: {} is reserved: {} by {} {}".format(self.seatID, self.reserved, self.name, self.surname)
@@ -33,6 +36,7 @@ class Seat:
     def reserve(self):
         if self.isReserved():
             print("The place is already booked\n")
+            time.sleep(5)
         else:
             try:
                 name = self.validationName()
@@ -44,13 +48,13 @@ class Seat:
                 self.surname = self.validationName()
                 self.reserved = True
                 print("\nSeat number {} has been reserved by {} {}".format(self.seatID , self.name, self.surname ))
-                
+                time.sleep(10)
             except ValueError as e:
                 print("Entered word was incorect!", e)
-                logging.error("Entered word was incorect")
+                logging.exception("Entered word was incorect")
             except UnboundLocalError as e:
                 print("Enterd name is not polish",e)
-                logging.error("Entered name is not correct")
+                logging.exception("Entered name is not correct")
 
     def validationName(self):
         name = input("Enter a name")
@@ -61,11 +65,13 @@ class Seat:
     def cancelReservation(self):
         if not self.isReserved():
             print("Seat is free!!!!")
+            time.sleep(5)
         else:
             self.name = ''
             self.surname = ''
             self.reserved = False
             print("Seat number {} has become free".format(self.seatID))
+            time.sleep(5)
 
     @staticmethod
     def loadMenNameFromFile(path):

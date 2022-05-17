@@ -1,5 +1,14 @@
-2022-05-17 11:38:44,008:root:Creating object CinemaHall
-2022-05-17 11:38:44,061:root:Creating object CinemaHall
-2022-05-17 11:38:44,112:root:Creating object CinemaHall
-2022-05-17 11:38:44,170:root:Creating object CinemaHall
-2022-05-17 11:38:44,217:root:Creating object CinemaHall
+2022-05-17 12:10:18,057:root:Creating object CinemaHall
+2022-05-17 12:10:18,106:root:Creating object CinemaHall
+2022-05-17 12:10:18,145:root:Creating object CinemaHall
+2022-05-17 12:10:18,185:root:Creating object CinemaHall
+2022-05-17 12:10:18,226:root:Creating object CinemaHall
+2022-05-17 12:10:18,239:root:Creat object cinema
+2022-05-17 12:11:29,576:root:Entered word was incorect
+Traceback (most recent call last):
+  File "/home/wojtek/Desktop/nauka/python_cinema/Cinema_booking_system/seat.py", line 42, in reserve
+    name = self.validationName()
+  File "/home/wojtek/Desktop/nauka/python_cinema/Cinema_booking_system/seat.py", line 62, in validationName
+    raise ValueError("Word should consits only letters!\n")
+ValueError: Word should consits only letters!
+
