@@ -1,255 +1,250 @@
-Cinema hall nr: 1 
-Seat number: 1 is reserved: False by  
-Seat number: 2 is reserved: False by  
-Seat number: 3 is reserved: False by  
-Seat number: 4 is reserved: False by  
-Seat number: 5 is reserved: False by  
-Seat number: 6 is reserved: False by  
-Seat number: 7 is reserved: False by  
-Seat number: 8 is reserved: False by  
-Seat number: 9 is reserved: False by  
-Seat number: 10 is reserved: False by  
-Seat number: 11 is reserved: False by  
-Seat number: 12 is reserved: False by  
-Seat number: 13 is reserved: False by  
-Seat number: 14 is reserved: False by  
-Seat number: 15 is reserved: False by  
-Seat number: 16 is reserved: False by  
-Seat number: 17 is reserved: False by  
-Seat number: 18 is reserved: False by  
-Seat number: 19 is reserved: False by  
-Seat number: 20 is reserved: False by  
-Seat number: 21 is reserved: False by  
-Seat number: 22 is reserved: False by  
-Seat number: 23 is reserved: False by  
-Seat number: 24 is reserved: False by  
-Seat number: 25 is reserved: False by  
-Seat number: 26 is reserved: False by  
-Seat number: 27 is reserved: False by  
-Seat number: 28 is reserved: False by  
-Seat number: 29 is reserved: False by  
-Seat number: 30 is reserved: False by  
-Seat number: 31 is reserved: False by  
-Seat number: 32 is reserved: False by  
-Seat number: 33 is reserved: False by  
-Seat number: 34 is reserved: False by  
-Seat number: 35 is reserved: False by  
-Seat number: 36 is reserved: False by  
-Seat number: 37 is reserved: False by  
-Seat number: 38 is reserved: False by  
-Seat number: 39 is reserved: False by  
-Seat number: 40 is reserved: False by  
-Seat number: 41 is reserved: False by  
-Seat number: 42 is reserved: False by  
-Seat number: 43 is reserved: False by  
-Seat number: 44 is reserved: False by  
-Seat number: 45 is reserved: False by  
-Seat number: 46 is reserved: False by  
-Seat number: 47 is reserved: False by  
-Seat number: 48 is reserved: False by  
-Seat number: 49 is reserved: False by  
-Seat number: 50 is reserved: False by  
-Cinema hall nr: 2 
-Seat number: 1 is reserved: False by  
-Seat number: 2 is reserved: False by  
-Seat number: 3 is reserved: False by  
-Seat number: 4 is reserved: False by  
-Seat number: 5 is reserved: False by  
-Seat number: 6 is reserved: False by  
-Seat number: 7 is reserved: False by  
-Seat number: 8 is reserved: False by  
-Seat number: 9 is reserved: False by  
-Seat number: 10 is reserved: False by  
-Seat number: 11 is reserved: False by  
-Seat number: 12 is reserved: False by  
-Seat number: 13 is reserved: False by  
-Seat number: 14 is reserved: False by  
-Seat number: 15 is reserved: False by  
-Seat number: 16 is reserved: False by  
-Seat number: 17 is reserved: False by  
-Seat number: 18 is reserved: False by  
-Seat number: 19 is reserved: False by  
-Seat number: 20 is reserved: False by  
-Seat number: 21 is reserved: False by  
-Seat number: 22 is reserved: False by  
-Seat number: 23 is reserved: False by  
-Seat number: 24 is reserved: False by  
-Seat number: 25 is reserved: False by  
-Seat number: 26 is reserved: False by  
-Seat number: 27 is reserved: False by  
-Seat number: 28 is reserved: False by  
-Seat number: 29 is reserved: False by  
-Seat number: 30 is reserved: False by  
-Seat number: 31 is reserved: False by  
-Seat number: 32 is reserved: False by  
-Seat number: 33 is reserved: False by  
-Seat number: 34 is reserved: False by  
-Seat number: 35 is reserved: False by  
-Seat number: 36 is reserved: False by  
-Seat number: 37 is reserved: False by  
-Seat number: 38 is reserved: False by  
-Seat number: 39 is reserved: False by  
-Seat number: 40 is reserved: False by  
-Seat number: 41 is reserved: False by  
-Seat number: 42 is reserved: False by  
-Seat number: 43 is reserved: False by  
-Seat number: 44 is reserved: False by  
-Seat number: 45 is reserved: False by  
-Seat number: 46 is reserved: False by  
-Seat number: 47 is reserved: False by  
-Seat number: 48 is reserved: False by  
-Seat number: 49 is reserved: False by  
-Seat number: 50 is reserved: False by  
-Cinema hall nr: 3 
-Seat number: 1 is reserved: False by  
-Seat number: 2 is reserved: False by  
-Seat number: 3 is reserved: False by  
-Seat number: 4 is reserved: False by  
-Seat number: 5 is reserved: False by  
-Seat number: 6 is reserved: False by  
-Seat number: 7 is reserved: False by  
-Seat number: 8 is reserved: False by  
-Seat number: 9 is reserved: False by  
-Seat number: 10 is reserved: False by  
-Seat number: 11 is reserved: False by  
-Seat number: 12 is reserved: False by  
-Seat number: 13 is reserved: False by  
-Seat number: 14 is reserved: False by  
-Seat number: 15 is reserved: False by  
-Seat number: 16 is reserved: False by  
-Seat number: 17 is reserved: False by  
-Seat number: 18 is reserved: False by  
-Seat number: 19 is reserved: False by  
-Seat number: 20 is reserved: False by  
-Seat number: 21 is reserved: False by  
-Seat number: 22 is reserved: False by  
-Seat number: 23 is reserved: False by  
-Seat number: 24 is reserved: False by  
-Seat number: 25 is reserved: False by  
-Seat number: 26 is reserved: False by  
-Seat number: 27 is reserved: False by  
-Seat number: 28 is reserved: False by  
-Seat number: 29 is reserved: False by  
-Seat number: 30 is reserved: False by  
-Seat number: 31 is reserved: False by  
-Seat number: 32 is reserved: False by  
-Seat number: 33 is reserved: False by  
-Seat number: 34 is reserved: False by  
-Seat number: 35 is reserved: False by  
-Seat number: 36 is reserved: False by  
-Seat number: 37 is reserved: False by  
-Seat number: 38 is reserved: False by  
-Seat number: 39 is reserved: False by  
-Seat number: 40 is reserved: False by  
-Seat number: 41 is reserved: False by  
-Seat number: 42 is reserved: False by  
-Seat number: 43 is reserved: False by  
-Seat number: 44 is reserved: False by  
-Seat number: 45 is reserved: False by  
-Seat number: 46 is reserved: False by  
-Seat number: 47 is reserved: False by  
-Seat number: 48 is reserved: False by  
-Seat number: 49 is reserved: False by  
-Seat number: 50 is reserved: True by adam krol
-Cinema hall nr: 4 
-Seat number: 1 is reserved: False by  
-Seat number: 2 is reserved: False by  
-Seat number: 3 is reserved: False by  
-Seat number: 4 is reserved: False by  
-Seat number: 5 is reserved: False by  
-Seat number: 6 is reserved: False by  
-Seat number: 7 is reserved: False by  
-Seat number: 8 is reserved: False by  
-Seat number: 9 is reserved: False by  
-Seat number: 10 is reserved: False by  
-Seat number: 11 is reserved: False by  
-Seat number: 12 is reserved: False by  
-Seat number: 13 is reserved: False by  
-Seat number: 14 is reserved: False by  
-Seat number: 15 is reserved: False by  
-Seat number: 16 is reserved: False by  
-Seat number: 17 is reserved: False by  
-Seat number: 18 is reserved: False by  
-Seat number: 19 is reserved: False by  
-Seat number: 20 is reserved: False by  
-Seat number: 21 is reserved: False by  
-Seat number: 22 is reserved: False by  
-Seat number: 23 is reserved: False by  
-Seat number: 24 is reserved: False by  
-Seat number: 25 is reserved: False by  
-Seat number: 26 is reserved: False by  
-Seat number: 27 is reserved: False by  
-Seat number: 28 is reserved: False by  
-Seat number: 29 is reserved: False by  
-Seat number: 30 is reserved: False by  
-Seat number: 31 is reserved: False by  
-Seat number: 32 is reserved: False by  
-Seat number: 33 is reserved: False by  
-Seat number: 34 is reserved: False by  
-Seat number: 35 is reserved: False by  
-Seat number: 36 is reserved: False by  
-Seat number: 37 is reserved: False by  
-Seat number: 38 is reserved: False by  
-Seat number: 39 is reserved: False by  
-Seat number: 40 is reserved: False by  
-Seat number: 41 is reserved: False by  
-Seat number: 42 is reserved: False by  
-Seat number: 43 is reserved: False by  
-Seat number: 44 is reserved: False by  
-Seat number: 45 is reserved: False by  
-Seat number: 46 is reserved: False by  
-Seat number: 47 is reserved: False by  
-Seat number: 48 is reserved: False by  
-Seat number: 49 is reserved: False by  
-Seat number: 50 is reserved: False by  
-Cinema hall nr: 5 
-Seat number: 1 is reserved: False by  
-Seat number: 2 is reserved: False by  
-Seat number: 3 is reserved: False by  
-Seat number: 4 is reserved: False by  
-Seat number: 5 is reserved: False by  
-Seat number: 6 is reserved: False by  
-Seat number: 7 is reserved: False by  
-Seat number: 8 is reserved: False by  
-Seat number: 9 is reserved: False by  
-Seat number: 10 is reserved: False by  
-Seat number: 11 is reserved: False by  
-Seat number: 12 is reserved: False by  
-Seat number: 13 is reserved: False by  
-Seat number: 14 is reserved: False by  
-Seat number: 15 is reserved: False by  
-Seat number: 16 is reserved: False by  
-Seat number: 17 is reserved: False by  
-Seat number: 18 is reserved: False by  
-Seat number: 19 is reserved: False by  
-Seat number: 20 is reserved: False by  
-Seat number: 21 is reserved: False by  
-Seat number: 22 is reserved: False by  
-Seat number: 23 is reserved: False by  
-Seat number: 24 is reserved: False by  
-Seat number: 25 is reserved: False by  
-Seat number: 26 is reserved: False by  
-Seat number: 27 is reserved: False by  
-Seat number: 28 is reserved: False by  
-Seat number: 29 is reserved: False by  
-Seat number: 30 is reserved: False by  
-Seat number: 31 is reserved: False by  
-Seat number: 32 is reserved: False by  
-Seat number: 33 is reserved: False by  
-Seat number: 34 is reserved: False by  
-Seat number: 35 is reserved: False by  
-Seat number: 36 is reserved: False by  
-Seat number: 37 is reserved: False by  
-Seat number: 38 is reserved: False by  
-Seat number: 39 is reserved: False by  
-Seat number: 40 is reserved: False by  
-Seat number: 41 is reserved: False by  
-Seat number: 42 is reserved: False by  
-Seat number: 43 is reserved: False by  
-Seat number: 44 is reserved: False by  
-Seat number: 45 is reserved: False by  
-Seat number: 46 is reserved: False by  
-Seat number: 47 is reserved: False by  
-Seat number: 48 is reserved: False by  
-Seat number: 49 is reserved: False by  
-Seat number: 50 is reserved: False by  
+Cinema hall nr: 1 Seat number: 1 is reserved: False by   
+Cinema hall nr: 1 Seat number: 2 is reserved: False by   
+Cinema hall nr: 1 Seat number: 3 is reserved: False by   
+Cinema hall nr: 1 Seat number: 4 is reserved: False by   
+Cinema hall nr: 1 Seat number: 5 is reserved: False by   
+Cinema hall nr: 1 Seat number: 6 is reserved: False by   
+Cinema hall nr: 1 Seat number: 7 is reserved: False by   
+Cinema hall nr: 1 Seat number: 8 is reserved: False by   
+Cinema hall nr: 1 Seat number: 9 is reserved: False by   
+Cinema hall nr: 1 Seat number: 10 is reserved: False by   
+Cinema hall nr: 1 Seat number: 11 is reserved: False by   
+Cinema hall nr: 1 Seat number: 12 is reserved: False by   
+Cinema hall nr: 1 Seat number: 13 is reserved: False by   
+Cinema hall nr: 1 Seat number: 14 is reserved: False by   
+Cinema hall nr: 1 Seat number: 15 is reserved: False by   
+Cinema hall nr: 1 Seat number: 16 is reserved: False by   
+Cinema hall nr: 1 Seat number: 17 is reserved: False by   
+Cinema hall nr: 1 Seat number: 18 is reserved: False by   
+Cinema hall nr: 1 Seat number: 19 is reserved: False by   
+Cinema hall nr: 1 Seat number: 20 is reserved: False by   
+Cinema hall nr: 1 Seat number: 21 is reserved: False by   
+Cinema hall nr: 1 Seat number: 22 is reserved: False by   
+Cinema hall nr: 1 Seat number: 23 is reserved: False by   
+Cinema hall nr: 1 Seat number: 24 is reserved: False by   
+Cinema hall nr: 1 Seat number: 25 is reserved: False by   
+Cinema hall nr: 1 Seat number: 26 is reserved: False by   
+Cinema hall nr: 1 Seat number: 27 is reserved: False by   
+Cinema hall nr: 1 Seat number: 28 is reserved: False by   
+Cinema hall nr: 1 Seat number: 29 is reserved: False by   
+Cinema hall nr: 1 Seat number: 30 is reserved: False by   
+Cinema hall nr: 1 Seat number: 31 is reserved: False by   
+Cinema hall nr: 1 Seat number: 32 is reserved: False by   
+Cinema hall nr: 1 Seat number: 33 is reserved: False by   
+Cinema hall nr: 1 Seat number: 34 is reserved: False by   
+Cinema hall nr: 1 Seat number: 35 is reserved: False by   
+Cinema hall nr: 1 Seat number: 36 is reserved: False by   
+Cinema hall nr: 1 Seat number: 37 is reserved: False by   
+Cinema hall nr: 1 Seat number: 38 is reserved: False by   
+Cinema hall nr: 1 Seat number: 39 is reserved: False by   
+Cinema hall nr: 1 Seat number: 40 is reserved: False by   
+Cinema hall nr: 1 Seat number: 41 is reserved: False by   
+Cinema hall nr: 1 Seat number: 42 is reserved: False by   
+Cinema hall nr: 1 Seat number: 43 is reserved: False by   
+Cinema hall nr: 1 Seat number: 44 is reserved: False by   
+Cinema hall nr: 1 Seat number: 45 is reserved: False by   
+Cinema hall nr: 1 Seat number: 46 is reserved: False by   
+Cinema hall nr: 1 Seat number: 47 is reserved: False by   
+Cinema hall nr: 1 Seat number: 48 is reserved: False by   
+Cinema hall nr: 1 Seat number: 49 is reserved: False by   
+Cinema hall nr: 1 Seat number: 50 is reserved: True by Adam kubacki
+Cinema hall nr: 2 Seat number: 1 is reserved: False by   
+Cinema hall nr: 2 Seat number: 2 is reserved: False by   
+Cinema hall nr: 2 Seat number: 3 is reserved: False by   
+Cinema hall nr: 2 Seat number: 4 is reserved: False by   
+Cinema hall nr: 2 Seat number: 5 is reserved: False by   
+Cinema hall nr: 2 Seat number: 6 is reserved: False by   
+Cinema hall nr: 2 Seat number: 7 is reserved: False by   
+Cinema hall nr: 2 Seat number: 8 is reserved: False by   
+Cinema hall nr: 2 Seat number: 9 is reserved: False by   
+Cinema hall nr: 2 Seat number: 10 is reserved: False by   
+Cinema hall nr: 2 Seat number: 11 is reserved: False by   
+Cinema hall nr: 2 Seat number: 12 is reserved: False by   
+Cinema hall nr: 2 Seat number: 13 is reserved: False by   
+Cinema hall nr: 2 Seat number: 14 is reserved: False by   
+Cinema hall nr: 2 Seat number: 15 is reserved: False by   
+Cinema hall nr: 2 Seat number: 16 is reserved: False by   
+Cinema hall nr: 2 Seat number: 17 is reserved: False by   
+Cinema hall nr: 2 Seat number: 18 is reserved: False by   
+Cinema hall nr: 2 Seat number: 19 is reserved: False by   
+Cinema hall nr: 2 Seat number: 20 is reserved: False by   
+Cinema hall nr: 2 Seat number: 21 is reserved: False by   
+Cinema hall nr: 2 Seat number: 22 is reserved: False by   
+Cinema hall nr: 2 Seat number: 23 is reserved: False by   
+Cinema hall nr: 2 Seat number: 24 is reserved: False by   
+Cinema hall nr: 2 Seat number: 25 is reserved: False by   
+Cinema hall nr: 2 Seat number: 26 is reserved: False by   
+Cinema hall nr: 2 Seat number: 27 is reserved: False by   
+Cinema hall nr: 2 Seat number: 28 is reserved: False by   
+Cinema hall nr: 2 Seat number: 29 is reserved: False by   
+Cinema hall nr: 2 Seat number: 30 is reserved: False by   
+Cinema hall nr: 2 Seat number: 31 is reserved: False by   
+Cinema hall nr: 2 Seat number: 32 is reserved: False by   
+Cinema hall nr: 2 Seat number: 33 is reserved: False by   
+Cinema hall nr: 2 Seat number: 34 is reserved: False by   
+Cinema hall nr: 2 Seat number: 35 is reserved: False by   
+Cinema hall nr: 2 Seat number: 36 is reserved: False by   
+Cinema hall nr: 2 Seat number: 37 is reserved: False by   
+Cinema hall nr: 2 Seat number: 38 is reserved: False by   
+Cinema hall nr: 2 Seat number: 39 is reserved: False by   
+Cinema hall nr: 2 Seat number: 40 is reserved: False by   
+Cinema hall nr: 2 Seat number: 41 is reserved: False by   
+Cinema hall nr: 2 Seat number: 42 is reserved: False by   
+Cinema hall nr: 2 Seat number: 43 is reserved: False by   
+Cinema hall nr: 2 Seat number: 44 is reserved: False by   
+Cinema hall nr: 2 Seat number: 45 is reserved: False by   
+Cinema hall nr: 2 Seat number: 46 is reserved: False by   
+Cinema hall nr: 2 Seat number: 47 is reserved: False by   
+Cinema hall nr: 2 Seat number: 48 is reserved: False by   
+Cinema hall nr: 2 Seat number: 49 is reserved: False by   
+Cinema hall nr: 2 Seat number: 50 is reserved: False by   
+Cinema hall nr: 3 Seat number: 1 is reserved: False by   
+Cinema hall nr: 3 Seat number: 2 is reserved: False by   
+Cinema hall nr: 3 Seat number: 3 is reserved: False by   
+Cinema hall nr: 3 Seat number: 4 is reserved: False by   
+Cinema hall nr: 3 Seat number: 5 is reserved: False by   
+Cinema hall nr: 3 Seat number: 6 is reserved: False by   
+Cinema hall nr: 3 Seat number: 7 is reserved: False by   
+Cinema hall nr: 3 Seat number: 8 is reserved: False by   
+Cinema hall nr: 3 Seat number: 9 is reserved: False by   
+Cinema hall nr: 3 Seat number: 10 is reserved: False by   
+Cinema hall nr: 3 Seat number: 11 is reserved: False by   
+Cinema hall nr: 3 Seat number: 12 is reserved: False by   
+Cinema hall nr: 3 Seat number: 13 is reserved: False by   
+Cinema hall nr: 3 Seat number: 14 is reserved: False by   
+Cinema hall nr: 3 Seat number: 15 is reserved: False by   
+Cinema hall nr: 3 Seat number: 16 is reserved: False by   
+Cinema hall nr: 3 Seat number: 17 is reserved: False by   
+Cinema hall nr: 3 Seat number: 18 is reserved: False by   
+Cinema hall nr: 3 Seat number: 19 is reserved: False by   
+Cinema hall nr: 3 Seat number: 20 is reserved: False by   
+Cinema hall nr: 3 Seat number: 21 is reserved: False by   
+Cinema hall nr: 3 Seat number: 22 is reserved: False by   
+Cinema hall nr: 3 Seat number: 23 is reserved: False by   
+Cinema hall nr: 3 Seat number: 24 is reserved: False by   
+Cinema hall nr: 3 Seat number: 25 is reserved: False by   
+Cinema hall nr: 3 Seat number: 26 is reserved: False by   
+Cinema hall nr: 3 Seat number: 27 is reserved: False by   
+Cinema hall nr: 3 Seat number: 28 is reserved: False by   
+Cinema hall nr: 3 Seat number: 29 is reserved: False by   
+Cinema hall nr: 3 Seat number: 30 is reserved: False by   
+Cinema hall nr: 3 Seat number: 31 is reserved: False by   
+Cinema hall nr: 3 Seat number: 32 is reserved: False by   
+Cinema hall nr: 3 Seat number: 33 is reserved: False by   
+Cinema hall nr: 3 Seat number: 34 is reserved: False by   
+Cinema hall nr: 3 Seat number: 35 is reserved: False by   
+Cinema hall nr: 3 Seat number: 36 is reserved: False by   
+Cinema hall nr: 3 Seat number: 37 is reserved: False by   
+Cinema hall nr: 3 Seat number: 38 is reserved: False by   
+Cinema hall nr: 3 Seat number: 39 is reserved: False by   
+Cinema hall nr: 3 Seat number: 40 is reserved: False by   
+Cinema hall nr: 3 Seat number: 41 is reserved: False by   
+Cinema hall nr: 3 Seat number: 42 is reserved: False by   
+Cinema hall nr: 3 Seat number: 43 is reserved: False by   
+Cinema hall nr: 3 Seat number: 44 is reserved: False by   
+Cinema hall nr: 3 Seat number: 45 is reserved: False by   
+Cinema hall nr: 3 Seat number: 46 is reserved: False by   
+Cinema hall nr: 3 Seat number: 47 is reserved: False by   
+Cinema hall nr: 3 Seat number: 48 is reserved: False by   
+Cinema hall nr: 3 Seat number: 49 is reserved: False by   
+Cinema hall nr: 3 Seat number: 50 is reserved: False by   
+Cinema hall nr: 4 Seat number: 1 is reserved: False by   
+Cinema hall nr: 4 Seat number: 2 is reserved: False by   
+Cinema hall nr: 4 Seat number: 3 is reserved: False by   
+Cinema hall nr: 4 Seat number: 4 is reserved: False by   
+Cinema hall nr: 4 Seat number: 5 is reserved: False by   
+Cinema hall nr: 4 Seat number: 6 is reserved: False by   
+Cinema hall nr: 4 Seat number: 7 is reserved: False by   
+Cinema hall nr: 4 Seat number: 8 is reserved: False by   
+Cinema hall nr: 4 Seat number: 9 is reserved: False by   
+Cinema hall nr: 4 Seat number: 10 is reserved: False by   
+Cinema hall nr: 4 Seat number: 11 is reserved: False by   
+Cinema hall nr: 4 Seat number: 12 is reserved: False by   
+Cinema hall nr: 4 Seat number: 13 is reserved: False by   
+Cinema hall nr: 4 Seat number: 14 is reserved: False by   
+Cinema hall nr: 4 Seat number: 15 is reserved: False by   
+Cinema hall nr: 4 Seat number: 16 is reserved: False by   
+Cinema hall nr: 4 Seat number: 17 is reserved: False by   
+Cinema hall nr: 4 Seat number: 18 is reserved: False by   
+Cinema hall nr: 4 Seat number: 19 is reserved: False by   
+Cinema hall nr: 4 Seat number: 20 is reserved: False by   
+Cinema hall nr: 4 Seat number: 21 is reserved: False by   
+Cinema hall nr: 4 Seat number: 22 is reserved: False by   
+Cinema hall nr: 4 Seat number: 23 is reserved: False by   
+Cinema hall nr: 4 Seat number: 24 is reserved: False by   
+Cinema hall nr: 4 Seat number: 25 is reserved: False by   
+Cinema hall nr: 4 Seat number: 26 is reserved: False by   
+Cinema hall nr: 4 Seat number: 27 is reserved: False by   
+Cinema hall nr: 4 Seat number: 28 is reserved: False by   
+Cinema hall nr: 4 Seat number: 29 is reserved: False by   
+Cinema hall nr: 4 Seat number: 30 is reserved: False by   
+Cinema hall nr: 4 Seat number: 31 is reserved: False by   
+Cinema hall nr: 4 Seat number: 32 is reserved: False by   
+Cinema hall nr: 4 Seat number: 33 is reserved: False by   
+Cinema hall nr: 4 Seat number: 34 is reserved: False by   
+Cinema hall nr: 4 Seat number: 35 is reserved: False by   
+Cinema hall nr: 4 Seat number: 36 is reserved: False by   
+Cinema hall nr: 4 Seat number: 37 is reserved: False by   
+Cinema hall nr: 4 Seat number: 38 is reserved: False by   
+Cinema hall nr: 4 Seat number: 39 is reserved: False by   
+Cinema hall nr: 4 Seat number: 40 is reserved: False by   
+Cinema hall nr: 4 Seat number: 41 is reserved: False by   
+Cinema hall nr: 4 Seat number: 42 is reserved: False by   
+Cinema hall nr: 4 Seat number: 43 is reserved: False by   
+Cinema hall nr: 4 Seat number: 44 is reserved: False by   
+Cinema hall nr: 4 Seat number: 45 is reserved: False by   
+Cinema hall nr: 4 Seat number: 46 is reserved: False by   
+Cinema hall nr: 4 Seat number: 47 is reserved: False by   
+Cinema hall nr: 4 Seat number: 48 is reserved: False by   
+Cinema hall nr: 4 Seat number: 49 is reserved: False by   
+Cinema hall nr: 4 Seat number: 50 is reserved: False by   
+Cinema hall nr: 5 Seat number: 1 is reserved: False by   
+Cinema hall nr: 5 Seat number: 2 is reserved: False by   
+Cinema hall nr: 5 Seat number: 3 is reserved: False by   
+Cinema hall nr: 5 Seat number: 4 is reserved: False by   
+Cinema hall nr: 5 Seat number: 5 is reserved: False by   
+Cinema hall nr: 5 Seat number: 6 is reserved: False by   
+Cinema hall nr: 5 Seat number: 7 is reserved: False by   
+Cinema hall nr: 5 Seat number: 8 is reserved: False by   
+Cinema hall nr: 5 Seat number: 9 is reserved: False by   
+Cinema hall nr: 5 Seat number: 10 is reserved: False by   
+Cinema hall nr: 5 Seat number: 11 is reserved: False by   
+Cinema hall nr: 5 Seat number: 12 is reserved: False by   
+Cinema hall nr: 5 Seat number: 13 is reserved: False by   
+Cinema hall nr: 5 Seat number: 14 is reserved: False by   
+Cinema hall nr: 5 Seat number: 15 is reserved: False by   
+Cinema hall nr: 5 Seat number: 16 is reserved: False by   
+Cinema hall nr: 5 Seat number: 17 is reserved: False by   
+Cinema hall nr: 5 Seat number: 18 is reserved: False by   
+Cinema hall nr: 5 Seat number: 19 is reserved: False by   
+Cinema hall nr: 5 Seat number: 20 is reserved: False by   
+Cinema hall nr: 5 Seat number: 21 is reserved: False by   
+Cinema hall nr: 5 Seat number: 22 is reserved: False by   
+Cinema hall nr: 5 Seat number: 23 is reserved: False by   
+Cinema hall nr: 5 Seat number: 24 is reserved: False by   
+Cinema hall nr: 5 Seat number: 25 is reserved: False by   
+Cinema hall nr: 5 Seat number: 26 is reserved: False by   
+Cinema hall nr: 5 Seat number: 27 is reserved: False by   
+Cinema hall nr: 5 Seat number: 28 is reserved: False by   
+Cinema hall nr: 5 Seat number: 29 is reserved: False by   
+Cinema hall nr: 5 Seat number: 30 is reserved: False by   
+Cinema hall nr: 5 Seat number: 31 is reserved: False by   
+Cinema hall nr: 5 Seat number: 32 is reserved: False by   
+Cinema hall nr: 5 Seat number: 33 is reserved: False by   
+Cinema hall nr: 5 Seat number: 34 is reserved: False by   
+Cinema hall nr: 5 Seat number: 35 is reserved: False by   
+Cinema hall nr: 5 Seat number: 36 is reserved: False by   
+Cinema hall nr: 5 Seat number: 37 is reserved: False by   
+Cinema hall nr: 5 Seat number: 38 is reserved: False by   
+Cinema hall nr: 5 Seat number: 39 is reserved: False by   
+Cinema hall nr: 5 Seat number: 40 is reserved: False by   
+Cinema hall nr: 5 Seat number: 41 is reserved: False by   
+Cinema hall nr: 5 Seat number: 42 is reserved: False by   
+Cinema hall nr: 5 Seat number: 43 is reserved: False by   
+Cinema hall nr: 5 Seat number: 44 is reserved: False by   
+Cinema hall nr: 5 Seat number: 45 is reserved: False by   
+Cinema hall nr: 5 Seat number: 46 is reserved: False by   
+Cinema hall nr: 5 Seat number: 47 is reserved: False by   
+Cinema hall nr: 5 Seat number: 48 is reserved: False by   
+Cinema hall nr: 5 Seat number: 49 is reserved: False by   
+Cinema hall nr: 5 Seat number: 50 is reserved: True by Wojciech Kupisz

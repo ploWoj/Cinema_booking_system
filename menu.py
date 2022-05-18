@@ -1,5 +1,6 @@
 from os import system
 from cinema import Cinema
+import logging
 
 class Menu:
 
@@ -18,7 +19,7 @@ class Menu:
     def selectMovie(self):
         system("clear")
         self.cinema.displayAllFilms()
-        number = self.validIntiger()
+        number = self.validIntiger() - 1
         
         return self.cinema.listOfHalls[number]
             
@@ -56,15 +57,18 @@ class Menu:
                 elif choice == 7:
                     self.cinema.writeToFile()
                 elif choice == 8:
-                    print('g')
+                    self.cinema.readFromFile()
                 else:
                     exit()
-            except ValueError as e:
+            except TypeError as e:
                 print("Wrogng type entered!", e, '\n')
-
+                logging.exception("Write wrong type")
+          
 
     def validIntiger(self):
+       
         number = int(input("\nEnter a number\n"))
         if type(number) != int :
-            raise ValueError("Entered type is not intiger!")
+            raise TypeError("Entered type is not intiger!")
+
         return number

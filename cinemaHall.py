@@ -1,5 +1,6 @@
 import os
 import time
+from typing import Counter
 from seat import Seat
 import logging
 maximumSeats = 50
@@ -7,21 +8,18 @@ maximumSeats = 50
 
 class CinemaHall:
 
-    hallNumber = 0
-    reservedSeat = 0
-    filmName = ''
-    
-
-    def __init__(self, filmName, listOfPlaces ):
+    def __init__(self, filmName, hallNumber):
         
         self.listOfPlaces = self.setPlaces(maximumSeats)
-        CinemaHall.hallNumber += 1
-        CinemaHall.reservedSeat = 0
+        self.reservedSeat = 0
         self.filmName = filmName
-
+        self.__hallNumber = hallNumber
+        # self.__hallNumber += 1
         logging.info("Creating object CinemaHall")
     
-    
+    def __str__(self):
+        return "Hall number {} with reserved seats {}, playing movie.".format(self.__hallNumber, self.reservedSeat)
+
     def displayAllPlaces(self):
         for i in self.listOfPlaces:
             print(i)
@@ -106,18 +104,19 @@ class CinemaHall:
     def setPlaces(self, maximiumSeats):
         listOfPlaces = []
         for i in range(1, maximiumSeats + 1):
-            listOfPlaces.append(Seat('','',i,False))
+            listOfPlaces.append(Seat('',' ',i,False))
         return listOfPlaces
 
 
-    def writeToFile(self, path,number):
+    def writeToFile(self, path, number):
         with open(path, 'a+') as f:
-            f.write("Cinema hall nr: {} \n".format(str(number)))
             for line in self.listOfPlaces:
-                if len(self.listOfPlaces) == 0:
-                    logging.info("Luck of reservations in hall numebr {}".format(line))
-                    continue
                 
-                f.write(str(line))
-                f.write('\n')
+                if len(self.listOfPlaces) == 0:
+                    logging.info("Luck of reservations in hall number {}".format(line))
+                    continue
+
+
+                f.write("Cinema hall nr: {} ".format(str(number)) + str(line) +"\n")
         
+#    def readFromFile(self, path, nuber):
