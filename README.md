@@ -6,8 +6,8 @@
 
 Glowna petla programu powinna przyjmowac od uzytkownika dane wejsciowe operacji np.
 
-1 - Rezerwuj miejsce'\n'
-2 - Anuluj rezerwacje'\n
+1 - Rezerwuj miejsce'
+2 - Anuluj rezerwacje'
 3 - Sprawdz dostepnosc miejsca
 4 - Wyswietl wszystkie miejsca
 5 - Wyswietl dostepne miejsca
