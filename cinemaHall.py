@@ -1,56 +1,57 @@
-
-import sys
-
+from os import system
+import time
+from typing import Counter
 from seat import Seat
-
+import logging
 maximumSeats = 50
 
 
 class CinemaHall:
 
-    hallNumber = 0
-    reservedSeat = 0
-    filmName = ''
-    listOfPlaces = []
-
-    def __init__(self, filmName):
+    def __init__(self, filmName, hallNumber):
         
-        CinemaHall.listOfPlaces = CinemaHall.setPlaces(maximumSeats)
-        CinemaHall.hallNumber += 1
-        CinemaHall.reservedSeat = 0
+        self.listOfPlaces = self.setPlaces(maximumSeats)
+        self.reservedSeat = 0
         self.filmName = filmName
+        self.__hallNumber = hallNumber
+        # self.__hallNumber += 1
+        logging.info("Creating object CinemaHall")
     
-    
+    def __str__(self):
+        return "Hall number {} with reserved seats {}, playing movie.".format(self.__hallNumber, self.reservedSeat)
+
     def displayAllPlaces(self):
         for i in self.listOfPlaces:
             print(i)
+        time.sleep(5)
+        system("clear")
     
     def displayFreeAndReservedSeat(self):
         numberOfFreeSeats = maximumSeats - self.reservedSeat
         print('\n')
         print("Number of free seats {}".format(numberOfFreeSeats))
         print("Number of reserved seats {}".format(self.reservedSeat))
+        time.sleep(5)
+        system("clear")
 
 
-    @classmethod
-    def displayAvailableSeats(cls):
-        print('\n')
-        for i in cls.listOfPlaces:
-            if not i.isReserved():
-                print(i)
-        print('\n')
+    def displayAvailableSeats(self):
+        for i in self.listOfPlaces:
+                if not i.isReserved():
+                    print(i)
+        time.sleep(3) 
+        system("clear")
 
-    @classmethod
-    def displayReservedSeats(cls):
-        print('\n')
-        for i in cls.listOfPlaces:
+    def displayReservedSeats(self):
+        for i in self.listOfPlaces:
             if i.isReserved():
                 print(i)
-        
+        time.sleep(3) 
+
     def selectSeat(self):
         
         selected =  int(input("Select number of seat ")) - 1
-        while (selected < 0  or selected > len(self.listOfPlaces)):
+        while 0 < selected < len(self.listOfPlaces):
             print('Try to choose a seat from 1 to {}'.format(len(self.listOfPlaces)))
             selected =  int(input("Select number of seat "))
     
@@ -62,8 +63,10 @@ class CinemaHall:
         selectedSeat = self.listOfPlaces[numberOfSeat]
         if selectedSeat.isReserved():
             print("Reserved")
+            time.sleep(5)
         else:
             print("Not reserved")
+            time.sleep(5)
             
 
     def addReservation(self):
@@ -76,6 +79,7 @@ class CinemaHall:
                 self.reservedSeat += 1
             else:
                 print("This seat is already selected")
+                time.sleep(5)
         else:
             print("There is no more place.")
 
@@ -85,7 +89,8 @@ class CinemaHall:
         if selectedSeat.isReserved():
             selectedSeat.cancelReservation()
         else:
-            print("This places cannot be canceld becouse is not reserved")
+            print("This places cannot be cancel becouse is not reserved")
+            time.sleep(5)
 
 
     def setFilmName(self, film):
@@ -97,11 +102,22 @@ class CinemaHall:
     def getNumberOfReservedSeats(self):
         return self.reservedSeat
 
-    @staticmethod
-    def setPlaces(maximiumSeats):
+    
+    def setPlaces(self, maximiumSeats):
         listOfPlaces = []
         for i in range(1, maximiumSeats + 1):
-            listOfPlaces.append(Seat('','',i,False))
+            listOfPlaces.append(Seat('',' ',i,False))
         return listOfPlaces
 
 
+    def writeToFile(self, path, number):
+        with open(path, 'a+') as f:
+            for line in self.listOfPlaces:
+                
+                if len(self.listOfPlaces) == 0:
+                    logging.info("Luck of reservations in hall number {}".format(line))
+                    continue
+
+
+                f.write("Cinema hall nr: {} ".format(str(number)) + str(line) +"\n")
+        
