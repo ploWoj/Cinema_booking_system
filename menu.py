@@ -2,15 +2,17 @@ from os import system
 from cinema import Cinema
 import logging
 
-class Menu:
 
+
+class Menu:
+    
     menuOption = ['Add reservation', 'Cancel reservation', 'Check the seat',
                  'Display all seats', 'Display available seats', 'Display reserved seats',
                  'Write to File', 'Load from File', 'EXIT']
 
     def __init__(self):
         self.cinema = Cinema()
-    
+
     def printMenu(self):
         
         for i in range (0, len(self.menuOption)):

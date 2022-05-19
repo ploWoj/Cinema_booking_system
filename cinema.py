@@ -79,7 +79,6 @@ class Cinema:
         if not os.path.exists(path_file):
             raise FileExistsError("File does not exists")
         
-
         with open(path_file, 'r') as f:
             for hall in self.listOfHalls:
                 sth  = []
