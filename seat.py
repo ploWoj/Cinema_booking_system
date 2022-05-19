@@ -1,7 +1,7 @@
 import time
 import os
 import logging
-
+from os import system
 
 
 man_file_path = os.getcwd() + '/names/manName.txt'
@@ -72,6 +72,7 @@ class Seat:
             self.__reserved = False
             print("Seat number {} has become free".format(self.__seatID))
             time.sleep(2)
+            system("clear")
 
     @staticmethod
     def loadMenNameFromFile(path):
@@ -109,10 +110,3 @@ class Seat:
 
     def getSeatId(self):
         return self.__seatID
-
-
-
-
-
-
-

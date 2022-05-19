@@ -1,4 +1,4 @@
-import os
+from os import system
 import time
 from typing import Counter
 from seat import Seat
@@ -23,6 +23,8 @@ class CinemaHall:
     def displayAllPlaces(self):
         for i in self.listOfPlaces:
             print(i)
+        time.sleep(5)
+        system("clear")
     
     def displayFreeAndReservedSeat(self):
         numberOfFreeSeats = maximumSeats - self.reservedSeat
@@ -30,25 +32,26 @@ class CinemaHall:
         print("Number of free seats {}".format(numberOfFreeSeats))
         print("Number of reserved seats {}".format(self.reservedSeat))
         time.sleep(5)
+        system("clear")
 
 
     def displayAvailableSeats(self):
-        print('\n')
         for i in self.listOfPlaces:
-            if not i.isReserved():
-                print(i)
-        print('\n')
+                if not i.isReserved():
+                    print(i)
+        time.sleep(3) 
+        system("clear")
 
     def displayReservedSeats(self):
-        print('\n')
         for i in self.listOfPlaces:
             if i.isReserved():
                 print(i)
-        
+        time.sleep(3) 
+
     def selectSeat(self):
         
         selected =  int(input("Select number of seat ")) - 1
-        while (selected < 0  or selected > len(self.listOfPlaces)):
+        while 0 < selected < len(self.listOfPlaces):
             print('Try to choose a seat from 1 to {}'.format(len(self.listOfPlaces)))
             selected =  int(input("Select number of seat "))
     
@@ -79,7 +82,6 @@ class CinemaHall:
                 time.sleep(5)
         else:
             print("There is no more place.")
-            time.sleep(5)
 
     def cancelReservation(self):
         self.displayReservedSeats()
@@ -119,4 +121,3 @@ class CinemaHall:
 
                 f.write("Cinema hall nr: {} ".format(str(number)) + str(line) +"\n")
         
-#    def readFromFile(self, path, nuber):

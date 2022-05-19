@@ -7,6 +7,7 @@ class Menu:
     menuOption = ['Add reservation', 'Cancel reservation', 'Check the seat',
                  'Display all seats', 'Display available seats', 'Display reserved seats',
                  'Write to File', 'Load from File', 'EXIT']
+
     def __init__(self):
         self.cinema = Cinema()
     
@@ -20,7 +21,9 @@ class Menu:
         system("clear")
         self.cinema.displayAllFilms()
         number = self.validIntiger() - 1
-        
+        if 0 < number < len(self.cinema.listOfFilms):
+            raise IndexError("We play only {} movies".format(len(self.cinema.listOfFilms)))
+        system("clear")
         return self.cinema.listOfHalls[number]
             
         
@@ -54,21 +57,25 @@ class Menu:
                 elif choice == 6:
                     selectedHall = self.selectMovie()
                     selectedHall.displayReservedSeats()
+
                 elif choice == 7:
+
                     self.cinema.writeToFile()
                 elif choice == 8:
+
                     self.cinema.readFromFile()
                 else:
                     exit()
-            except TypeError as e:
+            except ValueError as e:
                 print("Wrogng type entered!", e, '\n')
                 logging.exception("Write wrong type")
-          
+            except IndexError as e:
+                print("Chosen movie which is not in our offert")
+                logging.exception("out of band")
 
     def validIntiger(self):
        
         number = int(input("\nEnter a number\n"))
         if type(number) != int :
-            raise TypeError("Entered type is not intiger!")
-
+            raise ValueError("Entered type is not intiger!")
         return number
