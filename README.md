@@ -15,14 +15,14 @@ Glowna petla programu powinna przyjmowac od uzytkownika dane wejsciowe operacji 
 7 - Odczyt/ Zapis do pliku  
 8 - Wyjscie z programu
 
-### Modul Cinema  
+### Module Cinema  
 Glowny obiek zarzadzajacy kinem. Powinien zawierac najwazniejsz funkcje i byc calkowicie rozlaczony  
 aby w miare potrzeby mozna go bylo przniesc do innego projektu np. Podmienic na GUI
 
-### Modul Seat
+### Module Seat
 Klas powinna opisywac wszystkie wlasciowosci siedzenia.  
 Imie i nazwisko osoby rezerwujacej miejsce oraz numer siedzenia.
 
-### Modul LOG
+### Module LOG
 Obiekt powinien logowac wszystkie wydarzenia wykonane przez system
 i dopisywac to do pliku o nazwie z aktualna data i w folderze logs.
