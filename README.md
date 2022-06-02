@@ -2,7 +2,7 @@
 
 ### Projekt: System rezerwacji w kinie.
 
-### Modul menu
+### Module menu
 
 Glowna petla programu powinna przyjmowac od uzytkownika dane wejsciowe operacji np.
 
